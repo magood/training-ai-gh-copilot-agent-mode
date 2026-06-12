@@ -1,0 +1,148 @@
+.app-shell {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-end;
+  padding: 32px 40px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 34px;
+  line-height: 1.1;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.app-nav {
+  gap: 6px;
+  justify-content: flex-end;
+}
+
+.app-nav .nav-link {
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  font-weight: 600;
+}
+
+.app-nav .nav-link:hover,
+.app-nav .nav-link:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent-border);
+}
+
+.app-nav .nav-link.active {
+  color: #ffffff;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.app-main {
+  flex: 1;
+  padding: 32px 40px 48px;
+}
+
+.resource-view {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.view-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.view-heading h2 {
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.record-count {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  padding: 4px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+  background: var(--surface);
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.data-frame {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.table {
+  --bs-table-bg: transparent;
+  --bs-table-color: var(--text);
+  --bs-table-hover-bg: var(--hover);
+  color: var(--text);
+}
+
+.table thead th {
+  color: var(--muted);
+  background: var(--table-head);
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.table tbody td {
+  border-color: var(--border);
+}
+
+.rank-cell {
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.empty-state {
+  margin: 0;
+  padding: 24px;
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .app-header,
+  .view-heading {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .app-header,
+  .app-main {
+    padding-inline: 20px;
+  }
+
+  .app-nav {
+    justify-content: flex-start;
+  }
+}

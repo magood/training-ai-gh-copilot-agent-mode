@@ -1,0 +1,38 @@
+:root {
+  --text: #2f3437;
+  --muted: #687076;
+  --bg: #f7f8f3;
+  --surface: #ffffff;
+  --border: #d9ded3;
+  --accent: #176b5b;
+  --accent-border: #72a99b;
+  --hover: #edf4f1;
+  --table-head: #f1f5ec;
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  font: 16px/1.5 var(--sans);
+  letter-spacing: 0;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: var(--bg);
+}
+
+#root {
+  min-height: 100svh;
+}
+
+h1,
+h2,
+h3,
+p {
+  letter-spacing: 0;
+}
